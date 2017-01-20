@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Swarthmore College GPA CAlculator",
+  "short_name": "SwatGPACalc",
+  "description": "Replace new tab with a randomly chosen DigitalGlobe satellite image",
+  "version": "0.0.1",
+  "homepage_url": "https://github.com/oliver-newman/swat-gpa-calc-extension",
+  "options_page": "options.html",
+
+  "permissions": [
+  ],
+
+  "icons": {
+    "16": "assets/images/icon16.png",
+    "48": "assets/images/icon48.png",
+    "128": "assets/images/icon128.png"
+  }
+}
