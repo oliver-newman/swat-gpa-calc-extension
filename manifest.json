@@ -2,17 +2,17 @@
   "manifest_version": 2,
   "name": "Swarthmore College GPA CAlculator",
   "short_name": "SwatGPACalc",
-  "description": "Replace new tab with a randomly chosen DigitalGlobe satellite image",
+  "description": "Calculates and displays a student's GPA on MySwarthmore.",
   "version": "0.0.1",
   "homepage_url": "https://github.com/oliver-newman/swat-gpa-calc-extension",
-  "options_page": "options.html",
 
-  "permissions": [
+  "content_scripts": [
+    {
+      "matches": ["*://magnolia.swarthmore.edu:*/ords/*GRADE_REPORT*"],
+      "js": ["jquery-3.2.1.min.js", "gpacalc.js"]
+    }
   ],
 
   "icons": {
-    "16": "assets/images/icon16.png",
-    "48": "assets/images/icon48.png",
-    "128": "assets/images/icon128.png"
   }
 }
