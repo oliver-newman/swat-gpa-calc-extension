@@ -1,6 +1,7 @@
 function main() {
   let gradeTableClass = ".standardLook";
-  let gradeTable = $(gradeTableClass)[0].find("tr");
+  let gradeTable = ($(gradeTableClass)).find("tr");
+  console.log(gradeTable);
 }
 
 function parseGrades() {
